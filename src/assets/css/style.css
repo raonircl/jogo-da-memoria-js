@@ -49,3 +49,14 @@ h2 {
     color: #ec38bc;
     background-color: #221e47;
 }
+
+.game {
+    width: 33rem;
+    height: 28rem;
+    border: 1px solid #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
