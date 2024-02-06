@@ -52,10 +52,11 @@ h2 {
 }
 
 .game {
-    width: 33rem;
-    height: 28rem;
-    border: 1px solid #ffffff;
+    width: 33.0rem;
+    height: 28.0rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 10px;
     transform-style: preserve-3d;
@@ -71,8 +72,8 @@ h2 {
     justify-content: center;
     background-color: #ffffff;
     font-size: 3em;
-    transition: 0.25s;
     transform: rotateY(180deg);
+    transition: 0.25s;
 }
 
 .item::after {
@@ -87,9 +88,9 @@ h2 {
 
 .item.boxOpen {
     transform: rotateY(0deg);
-
 }
 
-.boxOpen {
+.boxOpen::after, 
+.boxMatch::after {
     transform: rotateY(180deg);
 }
